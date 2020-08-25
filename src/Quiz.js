@@ -9,9 +9,7 @@ class Quiz extends Component {
   }
 
   render() {
-    <div className="QuizQuestion">
-      <QuizQuestion />
-    </div>;
+    return <div className="QuizQuestion"></div>;
   }
 }
 
