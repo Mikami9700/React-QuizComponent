@@ -23,4 +23,4 @@ class QuizQuestion extends Component {
   }
 }
 
-export default QuizQuestion; // expose the QuizQuestion component to other modules
+export default QuizQuestion;
