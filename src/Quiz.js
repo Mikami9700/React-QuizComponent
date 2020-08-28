@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import QuizQuestion from "./QuizQuestion.js";
-import QuizEnd from "./QuizEnd.js";
+import QuizQuestion from "./QuizQuestion";
+import QuizEnd from "./QuizEnd";
 
 let quizData = require("./quiz_data.json");
 
@@ -16,10 +16,15 @@ class Quiz extends Component {
     });
   }
 
+  handleResetClick() {
+    this.setState({
+      quiz_position: 1,
+    });
+  }
+
   render() {
     const isQuizEnd =
       this.state.quiz_position - 1 === quizData.quiz_questions.length;
-
     return (
       <div>
         {isQuizEnd ? (
